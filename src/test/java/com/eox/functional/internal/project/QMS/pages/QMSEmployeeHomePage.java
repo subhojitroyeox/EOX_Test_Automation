@@ -3,6 +3,8 @@ package com.eox.functional.internal.project.QMS.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import com.eox.functional.internal.project.QMS.pages.Audit.ViewAuditRecords;
 import com.eox.functional.internal.project.QMS.pages.ChangeMangement.CreateChangeManagementPage;
@@ -19,19 +21,29 @@ public class QMSEmployeeHomePage {
 
 	public QMSEmployeeHomePage(WebDriver driver) {
 		this.driver = driver;
+		PageFactory.initElements(driver, this);
 	}
 
-	private WebElement viewPolicyButton = driver.findElement(By.xpath("//a[@title='Policies']"));
+	@FindBy(xpath="//a[@title='Policies']")
+	private static WebElement viewPolicyButton;
 
-	private WebElement viewProcedureButton = driver.findElement(By.xpath("//a[@title='Procedures']"));
+	@FindBy(xpath="//a[@title='Procedures']")
+	private WebElement viewProcedureButton;
 
-	private WebElement createRCAButton = driver.findElement(By.xpath("//a[@title='New RCA']"));
-	private WebElement viewRCAButton = driver.findElement(By.xpath("//a[@title='RCAs']"));
+	@FindBy(xpath="//a[@title='New RCA']")
+	private WebElement createRCAButton;
+	
+	@FindBy(xpath="//a[@title='RCAs']")
+	private WebElement viewRCAButton;
 
-	private WebElement createAuditButton = driver.findElement(By.xpath("//a[@title='New Audit']"));
-	private WebElement viewAuditButton = driver.findElement(By.xpath("//a[@title='Audits']"));
+	@FindBy(xpath="//a[@title='New Audit']")
+	private WebElement createAuditButton;
+	
+	@FindBy(xpath="//a[@title='Audits']")
+	private WebElement viewAuditButton;
 
-	private WebElement viewChangeMgtButton = driver.findElement(By.xpath("//a[@title='Change Managements']"));
+	@FindBy(xpath="//a[@title='Change Managements']")
+	private WebElement viewChangeMgtButton;
 
 	public ViewPolicyRecords empViewPolicy() {
 		CommonFunctionUtils.elementClick(viewPolicyButton);
@@ -59,7 +71,7 @@ public class QMSEmployeeHomePage {
 	}
 
 	public ViewAuditRecords empViewAudit() {
-		CommonFunctionUtils.elementClick(viewChangeMgtButton);
+		CommonFunctionUtils.elementClick(viewAuditButton);
 		return new ViewAuditRecords(driver);
 	}
 

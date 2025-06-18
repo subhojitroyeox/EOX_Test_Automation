@@ -5,6 +5,7 @@ import org.testng.annotations.*;
 
 import com.eox.functional.internal.project.Hrms.pages.ExitInterviewPage;
 import com.eox.functional.internal.project.Procurement.pages.EmployeePage;
+import com.eox.functional.internal.project.QMS.pages.QMSAdminHomePage;
 import com.eox.utils.CommonFunctionUtils;
 import com.eox.utils.WebDriverUtils;
 public class BaseTest {
@@ -12,6 +13,8 @@ public class BaseTest {
 	public CommonFunctionUtils baseUtils;
 	public EmployeePage empPage;
 	public ExitInterviewPage exitInterviewPage;
+	public QMSAdminHomePage qmsAdminHomePage;
+	
 	@BeforeSuite
 	public void initialization() {
 		driver = WebDriverUtils.getDriver();
@@ -19,6 +22,7 @@ public class BaseTest {
 		baseUtils = new CommonFunctionUtils(driver);
 		empPage= new EmployeePage(driver);
 		exitInterviewPage= new ExitInterviewPage(driver);
+		qmsAdminHomePage = new QMSAdminHomePage(driver);
 	}
 	
 	@BeforeClass

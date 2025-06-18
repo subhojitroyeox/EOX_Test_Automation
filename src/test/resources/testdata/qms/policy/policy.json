@@ -1,0 +1,25 @@
+[
+	{
+    "policyTitle": "Test New Policy",
+    "documentNumber": "001",
+    "policyStatus": "Draft",
+    "departmentName": "HR",
+    "categoryName": "Ethics",
+    "groupName": "QA Team",
+    "approverName": "Harsha C H",
+    "observerName": "Sudheshna Gururaj",
+    "clientName": "Arrowhead",
+    "parentPolicyId": "",
+    "inceptionDate": "06/03/2025",
+    "reviewDate": "07/03/2025",
+    "expiryDate": "07/03/2025",
+    "dueDate": "07/03/2025",
+    "policyStatement": "This is a Policy Statement from JSON.",
+    "scope": "This is Scope from JSON.",
+    "objective": "This is Policy Objective from JSON.",
+    "policyDescription": "This is Policy description from JSON.",
+    "sop": "This is a Policy SOP from JSON.",
+    "evidence": "This is Policy Evidence from JSON.",
+    "audit": "This is Policy Audit from JSON."
+ 	}
+]	
