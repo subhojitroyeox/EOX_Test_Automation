@@ -3,14 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.eox.functional.internal.project.Hrms.tests.Test02">
+      <class name="com.eox.functional.internal.project.QMS.tests.CreateNewPolicy">
         <methods>
           <include name="initialization"/>
           <include name="tearDown"/>
-          <include name="testMe"/>
+          <include name="createNewPolicy"/>
           <include name="launchTheApplication"/>
         </methods>
-      </class> <!-- com.eox.functional.internal.project.Hrms.tests.Test02 -->
+      </class> <!-- com.eox.functional.internal.project.QMS.tests.CreateNewPolicy -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,0 +1,14 @@
+  {
+    "title": "Test New CM via JSON",
+    "departmentName": "Admin",
+    "groupName": "QA Team",
+    "status": "Requested",
+    "dateOfChange": "06/09/2025",
+    "assignedToName": "Subhojit Roy",
+    "observerName": "Prasun Ranjan",
+    "parentCMId": "",
+    "clientName": "Arrowhead",
+    "reasonForChange": "Reason for change from JSON data.",
+    "cmDescription": "Detailed CM description from JSON.",
+    "assumptions": "Assumptions for CM from JSON."
+  }
